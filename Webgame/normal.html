@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jump Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+</head>
+<center>
+  <button class="the-speed"><span id="speedbutton" onclick="goToIndex1Page()">-</span> Normal <span id="speedbutton" onclick="goToIndex2Page()">+</span></button>
+  <button class="the-score" >Score: <span id="score">0</span></button>
+</center>
+<body class="background">
+  <div id="game-over-modal" class="modal">
+    <div class="modal-content">
+      <p id="modal-text"></p>
+      <button id="tryagain" onclick="restartGame()">Try Again</button>
+      <button id="stop" onclick="goToIndexPage()">Stop</button>
+    </div>
+  </div>
+  <div id="game">
+    <div id="dino"></div>
+    <div id="rock" class="rocknormal"></div>
+  </div>
+</body>
+<center>
+  <button onclick="goToNormalPage()" class="play-button">Play</button>
+  <button onclick="goToIndexPage()" class="stop-button">Stop</button>
+</center>
+<script src="script.js"></script>
+<script src="href.js"></script>
+</html>
